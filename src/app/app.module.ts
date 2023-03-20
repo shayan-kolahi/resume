@@ -2,10 +2,14 @@ import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 
 import {AppComponent} from './app.component';
+import { HeaderComponent } from './components/header/header.component';
+import { BtnDirective } from './directives/btn.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    BtnDirective
   ],
   imports: [
     BrowserModule
