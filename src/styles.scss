@@ -31,7 +31,14 @@
 body {
   font-family: $Shabnam_FD;
   direction: rtl;
-  @apply bg-gray-50 min-h-screen overflow-x-hidden;
+  overflow-x: hidden;
+}
+
+.FA_direction{
+  direction: rtl;
+}
+.EN_direction{
+  direction: ltr;
 }
 
 .Shabnam_FD{
