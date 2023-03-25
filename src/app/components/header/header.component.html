@@ -10,13 +10,8 @@
           </svg>
           <h1 class="Shabnam_Bold_FD text-main m-0 text-3xl">شایان</h1>
         </a>
-        <nav class="flex gap-4 mr-10">
-          <a href="javascript:" class="p-2 text-lg text-gray-500 hover:text-main transition-all">خانه</a>
-          <a href="javascript:" class="p-2 text-lg text-gray-500 hover:text-main transition-all">درباره من</a>
-          <a href="javascript:" class="p-2 text-lg text-gray-500 hover:text-main transition-all">وبلاگ</a>
-          <a href="javascript:" class="p-2 text-lg text-gray-500 hover:text-main transition-all">نمونه کار ها</a>
-          <a href="javascript:" class="p-2 text-lg text-gray-500 hover:text-main transition-all">اخبار</a>
-          <a href="javascript:" class="p-2 text-lg text-gray-500 hover:text-main transition-all">مهارت ها</a>
+        <nav class="flex gap-2 mr-10">
+          <a  *ngFor="let item of items_header" href="javascript:" class="p-2 text-lg text-gray-500 hover:text-main transition-all">{{item}}</a>
         </nav>
         <button appBtn class="mr-auto">بیشتر</button>
       </div>

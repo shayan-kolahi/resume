@@ -12,4 +12,14 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  items_header:any = [
+    "درباره من",
+    "نمونه کار ها",
+    "لینک ها",
+    "سوابغ کاری",
+    "ممد نبودی ببنی",
+    "درباره ما",
+    "تماس با ما",
+  ]
+
 }
