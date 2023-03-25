@@ -6,6 +6,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { BtnDirective } from './directives/btn.directive';
 import { BannerComponent } from './components/banner/banner.component';
 import { AboutComponent } from './components/about/about.component';
+import { RecentWorksComponent } from './components/recent-works/recent-works.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { AboutComponent } from './components/about/about.component';
     BtnDirective,
     BannerComponent,
     AboutComponent,
+    RecentWorksComponent,
   ],
   imports: [
     BrowserModule
