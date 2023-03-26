@@ -28,12 +28,12 @@ export class AboutComponent implements OnInit {
   ]
   items_contactMe:any= [
     {
-      img : "location-pin",
+      img : "phone",
       title : "09025354927",
       type: "tel",
     },
     {
-      img : "graduation-cap",
+      img : "at",
       title : "shayankolahi30@gmail.com",
       type:"mailto",
     },
