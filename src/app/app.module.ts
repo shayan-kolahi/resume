@@ -8,6 +8,7 @@ import { BannerComponent } from './components/banner/banner.component';
 import { AboutComponent } from './components/about/about.component';
 import { RecentWorksComponent } from './components/recent-works/recent-works.component';
 import { RecentWorkAngularComponent } from './components/recent-work-angular/recent-work-angular.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { RecentWorkAngularComponent } from './components/recent-work-angular/rec
     AboutComponent,
     RecentWorksComponent,
     RecentWorkAngularComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule
