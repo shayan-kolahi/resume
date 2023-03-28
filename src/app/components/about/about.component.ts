@@ -41,12 +41,22 @@ export class AboutComponent implements OnInit {
 
 
   items_socialMedia:any= [
-    "github",
-    "instagram",
-    "telegram",
-    "whatsApp",
-    "discord",
-    "linkedin",
+    {
+      link:"https://github.com/shayan-kolahi",
+      title:"github"
+    },
+    {
+      link:"https://www.instagram.com/shayan__362/",
+      title:"instagram"
+    },
+    {
+      link:"https://t.me/Shayan_k_82",
+      title:"telegram"
+    },
+    {
+      link:"https://wa.me/09025354927",
+      title:"whatsApp"
+    },
   ]
 
 }

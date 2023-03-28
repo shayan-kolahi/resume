@@ -30,9 +30,9 @@
           </a>
         </span>
         <span class="mt-auto flex flex-wrap gap-2">
-          <a *ngFor="let item of items_socialMedia" href="javascript:"
+          <a *ngFor="let item of items_socialMedia" href="{{item.link}}" target="_blank"
              class="w-12 h-12 border flex justify-center items-center rounded-full bg-main hover:bg-main2 transition-all">
-            <img class="w-7 h-7 object-contain" src="../../../assets/images/icons/{{item}}.svg" alt="{{item}}">
+            <img class="w-7 h-7 object-contain" src="../../../assets/images/icons/{{item.title}}.svg" alt="{{item.title}}">
           </a>
         </span>
       </div>
