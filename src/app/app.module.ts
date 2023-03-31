@@ -5,6 +5,8 @@ import {AppComponent} from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { BtnDirective } from './directives/btn.directive';
 import { BannerComponent } from './components/banner/banner.component';
+import { TitleDirective } from './directives/title.directive';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +14,8 @@ import { BannerComponent } from './components/banner/banner.component';
     HeaderComponent,
     BtnDirective,
     BannerComponent,
+    TitleDirective,
+    AboutComponent,
   ],
   imports: [
     BrowserModule

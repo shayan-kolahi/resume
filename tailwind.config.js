@@ -14,6 +14,10 @@ module.exports = {
     container: {
       center: true,
     },
+    fontFamily: {
+      Shabnam: ['Shabnam_FD', 'sans-serif'],
+      Shabnam_B: ['Shabnam_Bold_FD', 'sans-serif'],
+    },
   },
   plugins: [require("daisyui")],
 }
