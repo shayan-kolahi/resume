@@ -9,6 +9,7 @@ import { TitleDirective } from './directives/title.directive';
 import { AboutComponent } from './components/about/about.component';
 import { AngularProjectComponent } from './components/angular-project/angular-project.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { RecentPortfolioComponent } from './components/recent-portfolio/recent-portfolio.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { SkillsComponent } from './components/skills/skills.component';
     AboutComponent,
     AngularProjectComponent,
     SkillsComponent,
+    RecentPortfolioComponent,
   ],
   imports: [
     BrowserModule
