@@ -11,17 +11,17 @@
         </div>
         <h2 class="text-white text-2xl mb-5">برنامه نویس و طراح وب</h2>
 
-        <div class="flex flex-col text-gray-600 gap-1 text-lg leading-10">
+        <div class="flex flex-col text-gray-600 gap-1 leading-10">
           <a href="{{item.type}}:{{item.title}}"
              class="flex text-white hover:text-main transition-all items-center gap-3"
              *ngFor="let item of items_contactMe">
-              <img class="w-5 h-5 object-contain"
+              <img class="w-4 h-4 object-contain"
                    src="../../../assets/images/icons/{{item.img}}.svg"
                    alt="{{item.img}}">
               {{item.title}}
           </a>
           <span class="flex text-white hover:text-main transition-all items-center gap-3">
-            <img class="w-5 h-5 object-contain"
+            <img class="w-4 h-4 object-contain"
                  src="../../../assets/images/icons/location-pin.svg"
                  alt="location-pin">
             تهران

@@ -6,7 +6,6 @@ import {Directive, ElementRef} from '@angular/core';
 export class BtnDirective {
   constructor(private el:ElementRef) {
     this.el.nativeElement.classList.add("text-white");
-    this.el.nativeElement.classList.add("text-lg");
     this.el.nativeElement.classList.add("bg-main");
     this.el.nativeElement.classList.add("rounded-full");
     this.el.nativeElement.classList.add("py-2");

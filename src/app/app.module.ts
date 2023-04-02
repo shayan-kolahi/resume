@@ -7,6 +7,8 @@ import { BtnDirective } from './directives/btn.directive';
 import { BannerComponent } from './components/banner/banner.component';
 import { TitleDirective } from './directives/title.directive';
 import { AboutComponent } from './components/about/about.component';
+import { AngularProjectComponent } from './components/angular-project/angular-project.component';
+import { SkillsComponent } from './components/skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { AboutComponent } from './components/about/about.component';
     BannerComponent,
     TitleDirective,
     AboutComponent,
+    AngularProjectComponent,
+    SkillsComponent,
   ],
   imports: [
     BrowserModule

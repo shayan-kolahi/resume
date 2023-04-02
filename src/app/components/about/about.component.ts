@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {SkillsService} from "../../services/skills.service";
+import {Skills} from "../../interface/skills";
 
 @Component({
   selector: 'app-about',
@@ -7,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  constructor(private SkillsService:SkillsService) { }
+
+  items_skills:Skills[] = this.SkillsService.items_skills
 
   ngOnInit(): void {
   }
@@ -37,18 +41,6 @@ export class AboutComponent implements OnInit {
       title : "shayankolahi30@gmail.com",
       type:"mailto",
     },
-  ]
-
-
-  items_skills:any= [
-    "html",
-    "css",
-    "js",
-    "scss",
-    "tailwind",
-    "bootstrap",
-    "typescript",
-    "angular",
   ]
 
 }

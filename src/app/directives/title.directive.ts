@@ -7,5 +7,6 @@ export class TitleDirective {
   constructor(private el:ElementRef) {
     this.el.nativeElement.classList.add("text-2xl");
     this.el.nativeElement.classList.add("font-Shabnam_B");
+    this.el.nativeElement.classList.add("m-0");
   }
 }
