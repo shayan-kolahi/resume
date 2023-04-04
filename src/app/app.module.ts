@@ -10,6 +10,7 @@ import { AboutComponent } from './components/about/about.component';
 import { AngularProjectComponent } from './components/angular-project/angular-project.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { RecentPortfolioComponent } from './components/recent-portfolio/recent-portfolio.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { RecentPortfolioComponent } from './components/recent-portfolio/recent-p
     AngularProjectComponent,
     SkillsComponent,
     RecentPortfolioComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule

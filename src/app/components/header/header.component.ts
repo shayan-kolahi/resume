@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ViewportScroller} from "@angular/common";
 
 @Component({
   selector: 'app-header',
@@ -7,19 +8,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private scroller: ViewportScroller) { }
 
   ngOnInit(): void {
   }
 
   items_header:any = [
-    "درباره من",
-    "نمونه کار ها",
-    "لینک ها",
-    "سوابغ کاری",
-    "ممد نبودی ببنی",
-    "درباره ما",
-    "تماس با ما",
+    {
+      id:"about",
+      title:"درباره من",
+    },
+    {
+      id:"angular-project",
+      title:"انگولار",
+    },
+    {
+      id:"skills",
+      title:"مهارت های من",
+    },
+    {
+      id:"recent-portfolio",
+      title:"نمونه کار ها",
+    },
   ]
-
+  scroll_to_section(id:string) {
+    this.scroller.scrollToAnchor(id);
+  }
 }

@@ -9,55 +9,14 @@
         <h1 class="text-main m-0 text-3xl font-Shabnam_B">شایان</h1>
       </a>
       <nav class="mr-auto flex gap-4">
-        <a href="javascript:"
-           class="py-2
-                  mx-2
-                  text-lg
-                  text-white
-                  hover:text-main
-                  transition-all
-                  border-b-2">
-          خانه</a>
-        <a href="javascript:"
+        <button *ngFor="let item of items_header" (click)="scroll_to_section(item.id)"
            class="py-2
                   mx-2
                   text-lg
                   text-white
                   hover:text-main
                   transition-all">
-          درباره من</a>
-        <a href="javascript:"
-           class="py-2
-                  mx-2
-                  text-lg
-                  text-white
-                  hover:text-main
-                  transition-all">
-          وبلاگ</a>
-        <a href="javascript:"
-           class="py-2
-                  mx-2
-                  text-lg
-                  text-white
-                  hover:text-main
-                  transition-all">
-          نمونه کار ها</a>
-        <a href="javascript:"
-           class="py-2
-                  mx-2
-                  text-lg
-                  text-white
-                  hover:text-main
-                  transition-all">
-          اخبار</a>
-        <a href="javascript:"
-           class="py-2
-                  mx-2
-                  text-lg
-                  text-white
-                  hover:text-main
-                  transition-all">
-          مهارت ها</a>
+          {{item.title}}</button>
       </nav>
     </div>
   </div>
