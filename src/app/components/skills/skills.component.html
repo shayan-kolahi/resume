@@ -1,8 +1,8 @@
 <section id="skills" class="my-16">
   <div class="container">
     <div class="grid grid-cols-2 mt-8 gap-4 items-center">
-      <div>
-        <h2 apptitle class="text-2xl font-Shabnam_B m-0">مهارت های من</h2>
+      <div class="max-[991px]:col-span-2">
+        <h2 appTitle>مهارت های من</h2>
 
         <div class="grid grid-cols-2 mt-8 gap-4 EN_direction">
           <div *ngFor="let item of items_skills" class="flex flex-col">
@@ -18,8 +18,8 @@
         </div>
 
       </div>
-      <div class="flex justify-end items-center">
-        <img class="w-3/4 object-contain" src="../../../assets/images/skill.jpg" alt="skill">
+      <div class="hidden min-[992px]:flex justify-end items-center">
+        <img class="w-3/4 object-contain" src="../../../assets/images/skill.png" alt="skill">
       </div>
     </div>
   </div>

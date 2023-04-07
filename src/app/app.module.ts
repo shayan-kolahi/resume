@@ -11,6 +11,7 @@ import { AngularProjectComponent } from './components/angular-project/angular-pr
 import { SkillsComponent } from './components/skills/skills.component';
 import { RecentPortfolioComponent } from './components/recent-portfolio/recent-portfolio.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ToggleBtnComponent } from './components/toggle-btn/toggle-btn.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { FooterComponent } from './components/footer/footer.component';
     SkillsComponent,
     RecentPortfolioComponent,
     FooterComponent,
+    ToggleBtnComponent,
   ],
   imports: [
     BrowserModule

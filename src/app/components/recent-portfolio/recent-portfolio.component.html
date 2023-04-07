@@ -1,16 +1,22 @@
-<section id="recent-portfolio" class="mt-16 py-16 bg-gray-100">
+<section id="recent-portfolio" class="mt-16 py-16 bg-gray-100 dark:bg-gray-800">
   <div class="container">
     <div class="w-full flex justify-center flex-col items-center">
       <h2 appTitle class="text-gray-800">نمونه کار های اخیر</h2>
-      <p class="mt-0 mb-0 max-w-[500px] text-center text-xl text-gray-700 leading-10">
+      <p class="mt-0 mb-0 max-w-[500px] text-center text-xl text-gray-700 leading-10  dark:text-white transition-all">
         همه این نمونه کار ها با html css js نوشته شده
       </p>
     </div>
-    <div class="grid grid-cols-3 mt-8 gap-4 gap-y-8">
-      <a *ngFor="let item of items_recentWorks" href="{{item.link}}" target="_blank" class="group">
-        <img class="w-full h-50 rounded object-cover shadow mb-3 border" src="../../../assets/images/recentWorks/{{item.img}}.png" alt="{{item.title}}">
+    <div class="grid max-[991px]:grid-cols-1 grid-cols-3 mt-8 gap-4 gap-y-8">
+      <a *ngFor="let item of items_recentWorks" href="{{item.link}}"
+         target="_blank"
+         class="group border rounded p-2 bg-white hover:bg-main shadow transition-all ">
+        <img class="w-full h-50 rounded object-cover shadow mb-3"
+             src="../../../assets/images/recentWorks/{{item.img}}.png"
+             alt="{{item.title}}">
         <div>
-          <h3 class="font-Shabnam_B text-xl group-hover:text-main text-gray-700 transition-all m-0">{{item.title}}</h3>
+          <h3 class="font-Shabnam_B text-xl group-hover:text-white text-gray-700  dark:text-white transition-all m-0">
+            {{item.title}}
+          </h3>
         </div>
       </a>
     </div>
