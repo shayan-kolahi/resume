@@ -7,8 +7,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        main: '#23b4e7',
-        main2:'#1b8bb3',
+        red:'#ddd',
       },
     },
     container: {
@@ -19,13 +18,16 @@ module.exports = {
         md: '720px',
         lg: '960px',
         xl: '1140px',
-        '2xl': '1140px',
+        '2xl': '1250px',
       },
     },
     fontFamily: {
-      Shabnam: ['Shabnam_FD', 'sans-serif'],
-      Shabnam_B: ['Shabnam_Bold_FD', 'sans-serif'],
+      IRANSansWeb: 'IRANSansWeb',
+      IRANSansFaNumBold: 'IRANSansFaNum-Bold'
     },
   },
   plugins: [require("daisyui")],
+  daisyui: {
+    rtl: true,
+  },
 }

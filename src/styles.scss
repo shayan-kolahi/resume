@@ -2,48 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "Shabnam_FD";
-  src: url("./assets/fonts/Shabnam-FD/Shabnam-FD.eot");
-  src: url("./assets/fonts/Shabnam-FD/Shabnam-FD.eot?#iefix") format('embedded-opentype'),
-  url("./assets/fonts/Shabnam-FD/Shabnam-FD.woff2") format('woff2'),
-  url("./assets/fonts/Shabnam-FD/Shabnam-FD.woff") format('woff'),
-  url("./assets/fonts/Shabnam-FD/Shabnam-FD.ttf") format('truetype'),
-  url("./assets/fonts/Shabnam-FD/Shabnam-FD.svg#Shabnam-FD") format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Shabnam_Bold_FD";
-  src: url("./assets/fonts/Shabnam-Bold-FD/Shabnam-Bold-FD.eot");
-  src: url("./assets/fonts/Shabnam-Bold-FD/Shabnam-Bold-FD.eot?#iefix") format('embedded-opentype'),
-  url("./assets/fonts/Shabnam-Bold-FD/Shabnam-Bold-FD.woff2") format('woff2'),
-  url("./assets/fonts/Shabnam-Bold-FD/Shabnam-Bold-FD.woff") format('woff'),
-  url("./assets/fonts/Shabnam-Bold-FD/Shabnam-Bold-FD.ttf") format('truetype'),
-  url("./assets/fonts/Shabnam-Bold-FD/Shabnam-Bold-FD.svg#Shabnam-Bold-FD") format('svg');
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
+@import "./assets/scss/fonts";
+@import "./assets/scss/variables";
 
-html , body{
-  scroll-behavior: smooth;
-}
-
-body {
-  direction: rtl;
+body ,
+html {
+  font-family: $font-family-1;
   overflow-x: hidden;
-  @apply font-Shabnam_B bg-white transition-all
-}
-
-body.dark{
-  @apply bg-gray-900 transition-all;
-}
-
-.FA_direction{
   direction: rtl;
+  min-height: 100vh;
+  background: #F6F6F6;
 }
-.EN_direction{
-  direction: ltr;
-}
+
