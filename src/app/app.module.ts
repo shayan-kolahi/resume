@@ -8,6 +8,7 @@ import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TabViewModule } from 'primeng/tabview';
 import { EducationSkillsComponent } from './components/education-skills/education-skills.component';
+import {NgOptimizedImage} from "@angular/common";
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { EducationSkillsComponent } from './components/education-skills/educatio
     BrowserModule,
     BrowserAnimationsModule,
     TabViewModule,
+    NgOptimizedImage,
   ],
   providers: [],
   bootstrap: [AppComponent]
